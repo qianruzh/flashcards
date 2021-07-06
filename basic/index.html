@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Flashcards</title>
+  </head>
+  <style>
+  	#img{
+  		width:500px;
+  	}
+  	#img img{
+	width:100%;
+	height:auto;
+}
+  </style>
+  <body>
+	<h1>Modified Version</h1>
+	<div >
+	<p id="flashcard">This is your flashcard, click to read.</p>
+	<p id="answer"></p>
+	</div>
+	<button onclick="CardClicked(event);">Next Question</button>
 
+
+	<h1>Extra Version 1</h1>
+	<p>Click the Question to see the answer.</p>
+	
+	<div onclick="QuestionClicked1(event);">
+	<p id="question1">This is your flashcard.</p>
+	<p id="answer1"></p>
+	</div>
+
+	<button onclick="CardClicked1(event);">Next Question</button>
+
+	<h1>Extra Version 2</h1>
+	<p>Hover on the Question to see the answer.</p>
+	
+	<p id="title">This is your flashcard.</p>
+	<div onmouseover="mOver(event)" onmouseout="mOut(event)">
+	<p id="question2"></p>
+	<p id="answer2"></p>
+	</div>
+
+	<button onclick="CardClicked2(event);">Next Question</button>
+
+	<h1>Extra Version 3</h1>
+	<p>Hover on the Question to see the answer.</p>
+	
+	<p id="title2">This is your flashcard.</p>
+	<div onmouseover="mOver2(event)" onmouseout="mOut2(event)">
+	<p id="question3"></p>
+	<p id="answer3"></p>
+	</div>
+	<div id="img">
+	</div>
+
+	<button onclick="CardClicked3(event);">Next Question</button>
+
+
+
+
+
+  </body>
+</html>
+
+<script type="text/javascript" src="scripts/index.js"></script>
